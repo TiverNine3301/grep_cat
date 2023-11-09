@@ -7,6 +7,7 @@ grep: $(CURDIRGREP)/s21_grep
 
 $(CURDIRGREP)/s21_grep: $(CURDIRGREP)/s21_grep.c
 	cd $(CURDIRGREP) && $(CC) $(CFLAGS) -o s21_grep s21_grep.c
+	cd $(CURDIRGREP) && $(CC) $(CFLAGS) s21_grep.h
 
 cat: $(CURDIRCAT)/s21_cat
 
