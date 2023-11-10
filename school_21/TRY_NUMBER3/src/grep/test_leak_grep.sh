@@ -15,6 +15,8 @@ declare -a tests=(
 "-s 'pattern' *.txt"
 "-f keywords.txt fruits.txt"
 "-o 'pattern' *.txt"
+"-iv *.txt"
+"-in apple *.txt"
 )
 
 testing()

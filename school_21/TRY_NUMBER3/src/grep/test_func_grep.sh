@@ -214,5 +214,25 @@ echo -en '\n\n' >> ./ResGrep/GrepTest.txt
 
 #=============================
 
+echo Test 22 >> ./ResGrep/GrepTest.txt
+grep -iv *.txt > RESGREP
+./s21_grep -iv *.txt > RESMYGREP
+gcc checker.c -o checker
+./checker >> ./ResGrep/GrepTest.txt
+rm -rf checker RES*
+echo -en '\n\n' >> ./ResGrep/GrepTest.txt
+
+#=============================
+
+echo Test 23 >> ./ResGrep/GrepTest.txt
+grep -in apple *.txt > RESGREP
+./s21_grep -in apple *.txt > RESMYGREP
+gcc checker.c -o checker
+./checker >> ./ResGrep/GrepTest.txt
+rm -rf checker RES*
+echo -en '\n\n' >> ./ResGrep/GrepTest.txt
+
+#=============================
+
 echo 'The test GREP is over.'
 cat ./ResGrep/GrepTest.txt
